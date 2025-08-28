@@ -40,5 +40,68 @@ Atividades Práticas:
 
     mensagem_personalizada("Fernanda", "T")
     # Saída: Boa tarde, Fernanda!
-    
+
 '''
+
+def exibe_nome_formatado(nome):
+    print("-" * 30)
+    print(f"Olá, {nome.upper()}!")
+    print("-" * 30)
+
+def verifica_maioridade(idade):
+    if idade >= 18:
+        print(f"Idade: {idade} → Maior de idade")
+    else:
+        print(f"Idade: {idade} → Maior de idade")
+
+def repetir_mensagem(msg, quantidade):
+    for i in range(quantidade):
+        print(msg)
+
+def mostra_tabuada(numero):
+    for i in range(1, 11):
+        print(f"{numero} x {i} = {numero * i}")
+
+def categoria_idade(idade):
+    if idade < 12:
+        print("Criança")
+    elif idade < 18:
+        print("Adolescente")
+    elif idade < 60:
+        print("Adulto")
+    else:
+        print("Idoso")
+
+def mensagem_personalizada(nome, turno):
+    if turno == "M":
+        print(f"Bom dia, {nome}!")
+    elif turno == "T":
+        print(f"Boa tarde, {nome}!")
+    elif turno == "N":
+        print(f"Boa noite, {nome}!")
+    else:
+        print("Turno inválido.")
+
+# Exemplo de teste
+exibe_nome_formatado("José Carlos")
+
+# Exemplos de teste
+verifica_maioridade(15)
+verifica_maioridade(22)
+
+# Exemplo de teste
+repetir_mensagem("Estudar é importante!", 3)
+
+# Exemplo de teste
+mostra_tabuada(5)
+
+# Exemplos de teste
+categoria_idade(7)
+categoria_idade(15)
+categoria_idade(35)
+categoria_idade(70)
+
+# Exemplos de teste
+mensagem_personalizada("Fernanda", "T")
+mensagem_personalizada("João", "N")
+mensagem_personalizada("Lucas", "X")
